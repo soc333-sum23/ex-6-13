@@ -98,3 +98,43 @@ get_p_value(XXXX)
 visualize(null_dist) +
   XXXX
 ```
+
+# Extra Credit
+
+## Q4: Run a hypothesis test to answer the research question below: 
+
+How is language spoken related to citizenship status among people who live in the US? 
+
+Use the `acs12` data. 
+
+## a: What are your null and alternative hypotheses? 
+
+## b: What are the explanatory and response variables, and what types are they? What kind of test do you need to run?
+
+```{r}
+# use this chunk to help you get a look at your data!
+```
+
+## c: Run your test!
+
+```{r}
+# first: calculate your test statistic
+test_stat <- acs12 |> 
+  specify(XXXX) |> 
+  hypothesize(XXXX) |> 
+  calculate(XXXX)
+
+# then: simulate your null distribution
+null_dist <- XXXX
+
+# next: calculate your p value 
+XXXX
+
+# finally: visualize where you sample is with respect to your null distribution
+visualize(XXXX) +
+  XXXX
+```
+
+## d: Interpret your results
+
+With a threshold value of p = .05, do you reject or fail to reject your null hypothesis? 
